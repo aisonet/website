@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>SB Admin 2 - Tables</title>
+  <title>sonet 2 - Tables</title>
 
   <!-- Custom fonts for this template -->
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
         <div class="sidebar-brand-icon rotate-n-15">
           <i class="fas fa-laugh-wink"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+        <div class="sidebar-brand-text mx-3">sonet <sup>2</sup></div>
       </a>
 
       <!-- Divider -->
@@ -159,11 +159,9 @@
           <!-- Topbar Search -->
           <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
             <div class="input-group">
-              <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              
               <div class="input-group-append">
-                <button class="btn btn-primary" type="button">
-                  <i class="fas fa-search fa-sm"></i>
-                </button>
+                
               </div>
             </div>
           </form>
@@ -301,8 +299,8 @@
             <!-- Nav Item - User Information -->
             <li class="nav-item dropdown no-arrow">
               <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Valerie Luna</span>
-                <img class="img-profile rounded-circle" src="https://source.unsplash.com/QAB-WJcbgJk/60x60">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">sonet</span>
+                <img class="img-profile rounded-circle" src="">
               </a>
               <!-- Dropdown - User Information -->
               <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
@@ -335,81 +333,264 @@
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <h1 class="h3 mb-2 text-gray-800">Tables</h1>
-          <p class="mb-4">DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the <a target="_blank" href="https://datatables.net">official DataTables documentation</a>.</p>
+          <h1 class="h3 mb-2 text-gray-800">Schedules</h1>
+          <p class="mb-4">Please select server name or PM name and confirm the date and time for patching</p>
 
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3">
-              <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Patching Schedule</h6>
             </div>
             <div class="card-body">
               <div class="table-responsive">
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                   <thead>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Server Name </th>
+                      <th>Product Manager</th>
+                      <th>Type</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Status</th>
                     </tr>
                   </thead>
                   <tfoot>
                     <tr>
-                      <th>Name</th>
-                      <th>Position</th>
-                      <th>Office</th>
-                      <th>Age</th>
-                      <th>Start date</th>
-                      <th>Salary</th>
+                      <th>Server Name </th>
+                      <th>Product Manager</th>
+                      <th>Type</th>
+                      <th>Date</th>
+                      <th>Time</th>
+                      <th>Status</th>
                     </tr>
                   </tfoot>
                   <tbody>
                     <tr>
+                      <td>dev04</td>
                       <td>Asif Iqbal</td>
-                      <td class = " select ">
+                      <td>Non-Production</td>
+                      <td class = "Select">
                         <select>        
-                                <option value="volvo">Volvo</option>
-                                <option value="saab">Saab</option>
-                                <option value="mercedes">Mercedes</option>
-                                <option value="audi">Audi</option>
+                                <option value="p"> 3/10/2020 </option>
+                                <option value="np">3/11/2020</option>
+                                <option value="p"> 3/12/2020 </option>
+                                <option value="np">3/13/2020</option>
+                                <option value="p"> 3/14/2020 </option>
+                                <option value="np">3/15/2020</option>
                         </select>
-                        
                       </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 9 AM - 12 PM </option>
+                                <option value="np">2 PM - 4 PM </option>
+                                <option value="np">6 PM - 8 PM </option>
 
-
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
-                    </tr>
-
-                    <tr>
-                      <td>Garrett Winters</td>
-                      <td>Accountant</td>
-                      <td>Tokyo</td>
-                      <td>63</td>
-                      <td>2011/07/25</td>
-                      <td>$170,750</td>
-                    </tr>
-                    <tr>
-                      <td>Michael Bruce</td>
-                      <td>Javascript Developer</td>
-                      <td>Singapore</td>
-                      <td>29</td>
-                      <td>2011/06/27</td>
-                      <td>$183,000</td>
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> Not Confirmed</option>
+                                <option value="np"> Confirmed</option>
+                                <option value="np"> Patched</option>
+                        </select>
+                      </td> 
                     </tr>
                     <tr>
-                      <td>Donna Snider</td>
-                      <td>Customer Support</td>
-                      <td>New York</td>
-                      <td>27</td>
-                      <td>2011/01/25</td>
-                      <td>$112,000</td>
+                      <td>server01</td>
+                      <td>Asif</td>
+                      <td>Production</td>
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 3/10/2020 </option>
+                                <option value="np">3/11/2020</option>
+                                <option value="p"> 3/12/2020 </option>
+                                <option value="np">3/13/2020</option>
+                                <option value="p"> 3/14/2020 </option>
+                                <option value="np">3/15/2020</option>
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 9 AM - 12 PM </option>
+                                <option value="np">2 PM - 4 PM </option>
+                                <option value="np">6 PM - 8 PM </option>
+
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> Not Confirmed</option>
+                                <option value="np"> Confirmed</option>
+                                <option value="np"> Patched</option>
+                        </select>
+                      </td> 
                     </tr>
+
+
+
+                      <td>server02</td>
+                      <td>Asif</td>
+                      <td>Non-Production</td>
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 3/10/2020 </option>
+                                <option value="np">3/11/2020</option>
+                                <option value="p"> 3/12/2020 </option>
+                                <option value="np">3/13/2020</option>
+                                <option value="p"> 3/14/2020 </option>
+                                <option value="np">3/15/2020</option>
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 9 AM - 12 PM </option>
+                                <option value="np">2 PM - 4 PM </option>
+                                <option value="np">6 PM - 8 PM </option>
+
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> Not Confirmed</option>
+                                <option value="np"> Confirmed</option>
+                                <option value="np"> Patched</option>
+                        </select>
+                      </td> 
+                    </tr>
+
+                    
+
+
+
+                      <td>server03</td>
+                      <td>Iqbal</td>
+                      <td>Production</td>
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 3/10/2020 </option>
+                                <option value="np">3/11/2020</option>
+                                <option value="p"> 3/12/2020 </option>
+                                <option value="np">3/13/2020</option>
+                                <option value="p"> 3/14/2020 </option>
+                                <option value="np">3/15/2020</option>
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 9 AM - 12 PM </option>
+                                <option value="np">2 PM - 4 PM </option>
+                                <option value="np">6 PM - 8 PM </option>
+
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> Not Confirmed</option>
+                                <option value="np"> Confirmed</option>
+                                <option value="np"> Patched</option>
+                        </select>
+                      </td> 
+                    </tr>
+
+                    
+
+
+                      <td>server04</td>
+                      <td>Iqbal</td>
+                      <td>Production</td>
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 3/10/2020 </option>
+                                <option value="np">3/11/2020</option>
+                                <option value="p"> 3/12/2020 </option>
+                                <option value="np">3/13/2020</option>
+                                <option value="p"> 3/14/2020 </option>
+                                <option value="np">3/15/2020</option>
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 9 AM - 12 PM </option>
+                                <option value="np">2 PM - 4 PM </option>
+                                <option value="np">6 PM - 8 PM </option>
+
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> Not Confirmed</option>
+                                <option value="np"> Confirmed</option>
+                                <option value="np"> Patched</option>
+                        </select>
+                      </td> 
+                    </tr>
+
+                    
+
+
+                      <td>server05</td>
+                      <td>sonet</td>
+                      <td>Non-Production</td>
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 3/10/2020 </option>
+                                <option value="np">3/11/2020</option>
+                                <option value="p"> 3/12/2020 </option>
+                                <option value="np">3/13/2020</option>
+                                <option value="p"> 3/14/2020 </option>
+                                <option value="np">3/15/2020</option>
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 9 AM - 12 PM </option>
+                                <option value="np">2 PM - 4 PM </option>
+                                <option value="np">6 PM - 8 PM </option>
+
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> Not Confirmed</option>
+                                <option value="np"> Confirmed</option>
+                                <option value="np"> Patched</option>
+                        </select>
+                      </td> 
+                    </tr>
+
+                    
+
+
+                      <td>server06</td>
+                      <td>sonet</td>
+                      <td>Production</td>
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 3/10/2020 </option>
+                                <option value="np">3/11/2020</option>
+                                <option value="p"> 3/12/2020 </option>
+                                <option value="np">3/13/2020</option>
+                                <option value="p"> 3/14/2020 </option>
+                                <option value="np">3/15/2020</option>
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> 9 AM - 12 PM </option>
+                                <option value="np">2 PM - 4 PM </option>
+                                <option value="np">6 PM - 8 PM </option>
+
+                        </select>
+                      </td> 
+                      <td class = "Select">
+                        <select>        
+                                <option value="p"> Not Confirmed</option>
+                                <option value="np"> Confirmed</option>
+                                <option value="np"> Patched</option>
+                        </select>
+                      </td> 
+                    </tr>
+                    
                   </tbody>
                 </table>
               </div>
